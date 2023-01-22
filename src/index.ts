@@ -19,8 +19,12 @@ class ProtonPlugin {
     }
 
     editor_saveProject() {}
-    editor_addElement(element: projectTypes.ProjectElement) {}
-    editor_deleteElement(elementUID: string) {}
+    editor_addElement({ element }: {
+        element: projectTypes.ProjectElement
+    }) {}
+    editor_deleteElement({ elementUID }: {
+        elementUID: string
+    }) {}
 }
 
 export default ProtonPlugin
