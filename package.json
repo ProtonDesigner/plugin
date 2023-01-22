@@ -9,7 +9,8 @@
     "build": "tsc",
     "prepare": "yarn build",
     "version": "git add -A src",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "publishToNPM": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
