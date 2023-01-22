@@ -1,0 +1,31 @@
+{
+  "name": "@techstudent10/plugin",
+  "version": "1.0.1",
+  "description": "Proton Plugin",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepare": "yarn build",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProtonDesigner/plugin.git"
+  },
+  "keywords": [
+    "plugin",
+    "proton"
+  ],
+  "author": "TechStudent10",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ProtonDesigner/plugin/issues"
+  },
+  "homepage": "https://github.com/ProtonDesigner/plugin#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
